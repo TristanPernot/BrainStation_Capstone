@@ -1,0 +1,41 @@
+.header{
+    background-color: #FFFF;
+    border-bottom: 5px #f37a48;
+        height: 12rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    
+      &__logo {
+        width: 12rem;
+        height: 3rem;
+        margin: 1rem 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 9rem;
+      }
+    
+      &__nav {
+        display: flex;
+    
+        &--item {
+          border-radius: 20px;
+          width: 44vw;
+          height: 2.5rem;
+          text-align: center;
+          padding-top: 0.5rem;
+          text-decoration: none;
+          font-size: 0.9rem;
+          margin: 1rem 0;
+          width: 6.7rem;
+          height: 2.3rem;
+          padding-top: 0.45rem;
+          
+        }
+    
+        &--item:hover {
+            border-bottom: 1px #f37a48;
+        }
+    }
+}
