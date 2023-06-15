@@ -1,4 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
+import './header.scss'
+import Logo from '../../assests/Logo/Logo.png'
 
 function Header() {
     return (
@@ -10,13 +12,13 @@ function Header() {
 
             <div className="header__nav">
             <NavLink to="/listings" className="header__nav--item">
-                <div>Players looking for a group</div>
+                <div>Player looking to join a group</div>
             </NavLink>
 
-            <NavLink to="/createListing" className="header__nav--button">
+            <NavLink to="/createListing" className="header__nav--item">
                 <div>I'm Looking to make a group</div>
             </NavLink>
-            <NavLink to="/loginPage" className="header__nav-button">
+            <NavLink to="/loginPage" className="header__nav--button">
                 <div>Log In</div>
             </NavLink>
             </div>

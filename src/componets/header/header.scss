@@ -1,25 +1,26 @@
 .header{
-    background-color: #FFFF;
+    background-color: beige;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
     border-bottom: 5px #f37a48;
-        height: 12rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: start;
-    
-      &__logo {
-        width: 12rem;
-        height: 3rem;
-        margin: 1rem 0;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 9rem;
+
+    &__logo {
+      background-image: url(../../assests/Logo/Logo.png);
+      width: 12rem;
+      height: 3rem;
+      margin: 1rem 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 5rem;
       }
     
       &__nav {
         display: flex;
-    
+        flex: 1;  
         &--item {
+          color: black;
           border-radius: 20px;
           width: 44vw;
           height: 2.5rem;
@@ -36,6 +37,17 @@
     
         &--item:hover {
             border-bottom: 1px #f37a48;
+        }
+        &--button{
+          background-color: #f37a48;
+          color: #FFFF;
+          border-radius: 0.25rem;
+          border: none;
+          height: 1.5rem;
+          width: 4rem;
+          margin-top: 1rem;
+          text-decoration: none;
+        
         }
     }
 }

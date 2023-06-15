@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import './HomePage.scss';
 function HomePage() {
     return (
         <>
@@ -6,8 +7,8 @@ function HomePage() {
             <h1 className="homepage__title">
                 Begin Your Journey into the world of TableTop Role Playing Games
             </h1>
-            <Link to="/listings" className="homepage__button">
-                <button>
+            <Link to="/listings">
+                <button className="homepage__button">
                     Start here
                 </button>
             </Link>
