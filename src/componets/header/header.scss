@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    border-bottom: 5px #f37a48;
+    border-bottom: 5px solid #f37a48;
 
     &__logo {
       background-image: url(../../assests/Logo/Logo.png);
@@ -21,7 +21,6 @@
         flex: 1;  
         &--item {
           color: black;
-          border-radius: 20px;
           width: 44vw;
           height: 2.5rem;
           text-align: center;
@@ -36,7 +35,7 @@
         }
     
         &--item:hover {
-            border-bottom: 1px #f37a48;
+            border-bottom: 1px solid #f37a48;
         }
         &--button{
           background-color: #f37a48;

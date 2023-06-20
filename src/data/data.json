@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "title": "The Quest for Eldoria",
+      "gametype": "Call of Cthulhu",
+      "description": "Placeholder text for description.",
+      "online": true,
+      "contact method": "email",
+      "comments": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "comment": "Placeholder comment."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Lost Kingdoms",
+      "gametype": "Dungeons and Dragons",
+      "description": "Placeholder text for description.",
+      "online": false,
+      "contact method": "discord",
+      "comments": [
+        {
+          "id": 1,
+          "name": "Jane Smith",
+          "comment": "Placeholder comment."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Shadows of the Megacity",
+      "gametype": "Shadowrun",
+      "description": "Placeholder text for description.",
+      "online": true,
+      "contact method": "email",
+      "comments": [
+        {
+          "id": 1,
+          "name": "David Johnson",
+          "comment": "Placeholder comment."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Heroes Unleashed",
+      "gametype": "Mutants and Masterminds",
+      "description": "Placeholder text for description.",
+      "online": false,
+      "contact method": "discord",
+      "comments": [
+        {
+          "id": 1,
+          "name": "Emily Anderson",
+          "comment": "Placeholder comment."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "The Chronicles of Astoria",
+      "gametype": "Dungeons and Dragons",
+      "description": "Placeholder text for description.",
+      "online": true,
+      "contact method": "other",
+      "comments": [
+        {
+          "id": 1,
+          "name": "Michael Thompson",
+          "comment": "Placeholder comment."
+        }
+      ]
+    }
+  ]
+  
