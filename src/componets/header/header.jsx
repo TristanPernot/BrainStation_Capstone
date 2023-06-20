@@ -15,7 +15,7 @@ function Header() {
                 <div>Player looking to join a group</div>
             </NavLink>
 
-            <NavLink to="/createListing" className="header__nav--item">
+            <NavLink to="/createlisting" className="header__nav--item">
                 <div>I'm Looking to make a group</div>
             </NavLink>
             <NavLink to="/loginPage" className="header__nav--button">

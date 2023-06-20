@@ -1,9 +1,9 @@
-import ListingComponent from '../../componets/ListingComponent/listingComponent';
+import ListComponent from "../../componets/ListingComponent/listingComponent";
 
 function ListingPage() {
     return (
         <>
-        
+            <ListComponent />
         </>
     );
 }

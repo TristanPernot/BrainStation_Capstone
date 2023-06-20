@@ -1,0 +1,25 @@
+.container{
+    background: #ffffff;
+    box-shadow: 0 0.125rem 0.3125rem rgba(19, 24, 44, 0.1);
+    padding-bottom: 1rem;
+    width: 50%;
+    margin-left: 5.15vw;
+    display: flex;
+
+    &__img{
+        width: 30%;
+        height: 30%;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        display: flex;
+    }
+    &__text{
+        color: gray;
+        display: flex;
+        &--important{
+            color: red;
+        }
+    }
+}

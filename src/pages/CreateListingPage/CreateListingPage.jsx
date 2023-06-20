@@ -1,9 +1,8 @@
-import './upload.scss'
+// import './CreateListing.scss'
 import Thumbnail from '../../assests/Images/unsplashdnd.jpg'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 function CreateListing() {
-
 
   // new video object parameter
       function addListing (newListing) {
@@ -30,9 +29,9 @@ function CreateListing() {
         <>
         <div className='flexcontainer'>
         <div className='row'>
-        <img src={Thumbnail} alt='Upload-video-preview.jpg' className='uploadimg'/>
+        <img src={Thumbnail} alt='Upload-img-preview.jpg' className='uploadimg'/>
         </div>
-        <div class="column70">
+        <div class="column">
           <div className='uploadform'>
           <form onSubmit={handleFormSubmit}>
             <label htmlFor='title'className='uploadform__label'>
