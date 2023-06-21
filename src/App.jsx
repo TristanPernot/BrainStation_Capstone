@@ -7,6 +7,8 @@ import Footer from './componets/footer/footer'
 import HomePage from "./pages/HomePage/HomePage";
 import ListingsPage from "./pages/ListingsPage/ListingsPage"
 import CreateListingPage from "./pages/CreateListingPage/CreateListingPage";
+import GetSingleListing from "./pages/GetSingleListing/GetSingleListing";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage"
 
 function App() {
   return (
@@ -17,8 +19,13 @@ function App() {
       {/* routes */}
       <Routes>
       <Route path="/" element={<HomePage />} />
+      {/*Listings*/}
       <Route path="/listings" element={<ListingsPage />} />
+      <Route path="/listings/:id" element={<GetSingleListing />} />
+      {/*Create Listings*/}
       <Route path="/createlisting" element={<CreateListingPage />} />
+      {/*404 not found*/}
+      <Route path="*" element={<NotFoundPage />} />
       </Routes>
       </BrowserRouter>
     </div>

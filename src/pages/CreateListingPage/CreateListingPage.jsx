@@ -2,6 +2,7 @@
 import Thumbnail from '../../assests/Images/unsplashdnd.jpg'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import './CreateListingPage.scss'
 function CreateListing() {
 
   // new video object parameter
@@ -56,8 +57,17 @@ function CreateListing() {
                 placeholder='Give your game a description'
                 required
               />
+              <label for="gametype">Choose a system for you TTRPG:</label>
+              <select id="cars" name="cars">
+                <option value="Call_of_Cthulhu">Call of Cthulhu</option>
+                <option value="Shadowrun">Shadowrun</option>
+                <option value="Dungeons_and_Dragons">Dungeons and Dragons</option>
+                <option value="Mutants_and_Masterminds">Mutants and Masterminds</option>
+              </select>
+              <input type="radio" id="online" name="online_check" value="Online" />
+              <label for="html">Online?</label>
               <Link to="/listings">
-              <button className='btn__upload'>
+              <button className='btn'>
                 Create Listing
               </button>
               </Link>

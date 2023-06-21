@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "title": "The Quest for Eldoria",
+      "title": "It Moves Under The Manor",
       "gametype": "Call of Cthulhu",
       "author" : "Galar Morgan",
       "description": "Placeholder text for description.",
@@ -19,7 +19,7 @@
       "id": 2,
       "title": "The Lost Kingdoms",
       "gametype": "Dungeons and Dragons",
-      "author" : "Dante Pizza",
+      "author" : "Dante from DMC",
       "description": "Placeholder text for description.",
       "online": false,
       "contact method": "discord",
@@ -79,5 +79,5 @@
         }
       ]
     }
-  ]
+]
   

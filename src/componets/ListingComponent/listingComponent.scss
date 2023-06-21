@@ -1,3 +1,8 @@
+.link{
+    text-decoration: none;
+    color: black;
+
+}
 .container{
     background: #ffffff;
     box-shadow: 0 0.125rem 0.3125rem rgba(19, 24, 44, 0.1);
@@ -5,21 +10,38 @@
     width: 50%;
     margin-left: 5.15vw;
     display: flex;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 3%;
+    flex-wrap: wrap;
 
     &__img{
         width: 30%;
         height: 30%;
+        border-radius: 3%;
     }
 
     &__title{
         font-size: 1.5rem;
         display: flex;
+        text-decoration: none;
+
     }
     &__text{
         color: gray;
         display: flex;
+        text-decoration: none;
+
         &--important{
             color: red;
+            text-decoration: none;
+
         }
+    }
+
+    &__secondary{
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
     }
 }
