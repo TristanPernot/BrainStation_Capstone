@@ -1,6 +1,6 @@
 .uploadimg{
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 20rem;
 }
 
 .btn{
@@ -8,8 +8,40 @@
     color: #FFFF;
     border-radius: 0.25rem;
     border: none;
-    height: 1.5rem;
-    width: 4rem;
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
     margin-top: 1rem;
     text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+.uploadform {
+    border: 0;
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    margin-left: 2rem;
+
+    &__fieldset {
+      border: 0;
+
+    }
+    &__input{
+        display: inline;
+        border: solid #E1E1E1;
+        border-radius: 1rem;
+        font-size: 0.875rem;
+        height: 2rem;
+        vertical-align: text-bottom;
+        background-color: #FAFAFA;
+        width: 50%;
+    }
+    &__smallinput{
+        display: inline;
+        height: 2rem;
+    }
+    &__label{
+        display: block;
+    }
 }

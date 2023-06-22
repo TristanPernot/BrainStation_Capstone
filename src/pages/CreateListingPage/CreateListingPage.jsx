@@ -1,30 +1,16 @@
-// import './CreateListing.scss'
+import './CreateListingPage.scss'
+import React from 'react'
 import Thumbnail from '../../assests/Images/unsplashdnd.jpg'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import './CreateListingPage.scss'
 function CreateListing() {
-
-  // new video object parameter
-      function addListing (newListing) {
-        axios
-        .post('http://localhost:8080/videos', newListing)
-        .then((result) => {
-        })
-        .catch((error) => {
-        console.error(error);
-        });
-      }
-
-      const handleFormSubmit = (event) => {
-        event.preventDefault();
-        const newListing = {
-          title: event.target.title.value,
-          gametype: event.target.gametype.value,
-          description: event.target.description.value,
-        };
-        addListing(newListing);
-      }
+    // const [dndData, setDndData] = useState([]);
+  
+    // const addItem = () => {
+    //   const newItem = 'New Item';
+    //   setItems(prevItems => [...prevItems, newItem]);
+    // };
 
        return ( 
         <>
@@ -34,7 +20,7 @@ function CreateListing() {
         </div>
         <div class="column">
           <div className='uploadform'>
-          <form onSubmit={handleFormSubmit}>
+          <form>
             <label htmlFor='title'className='uploadform__label'>
                 Title of your game
               </label>
@@ -57,15 +43,22 @@ function CreateListing() {
                 placeholder='Give your game a description'
                 required
               />
-              <label for="gametype">Choose a system for you TTRPG:</label>
-              <select id="cars" name="cars">
+              <label for="gametype" className='uploadform__label'>Choose a system for you TTRPG:</label>
+              <select id="gametype" name="gametype" className='uploadform__input' required>
                 <option value="Call_of_Cthulhu">Call of Cthulhu</option>
                 <option value="Shadowrun">Shadowrun</option>
                 <option value="Dungeons_and_Dragons">Dungeons and Dragons</option>
                 <option value="Mutants_and_Masterminds">Mutants and Masterminds</option>
               </select>
-              <input type="radio" id="online" name="online_check" value="Online" />
-              <label for="html">Online?</label>
+              <label for="contact" className='uploadform__label'>Choose a system for you to contact people:</label>
+              <select id="contact" name="contact" className='uploadform__input' required>
+                <option value="Email">Email</option>
+                <option value="Discord">Discord</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Other">Other Please describe in Description</option>
+              </select>
+              <input type="radio" id="online" name="online_check" value="Online" className='uploadform__smallinput'/>
+              <label for="online" className='uploadform__smallinput'>Online?</label>
               <Link to="/listings">
               <button className='btn'>
                 Create Listing
@@ -75,12 +68,11 @@ function CreateListing() {
             </div>
           </div>
         </div>
-        <div className='buttons'>
         <Link className='cancelbtn' to="/listings">
-          cancel
+          <button className='btn'>
+            Cancel
+          </button>
         </Link>
-        </div>
-    
   
         </>
 
