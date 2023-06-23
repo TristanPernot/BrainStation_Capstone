@@ -10,6 +10,18 @@ import data from "../../data/data.json"
 function ListComponent(){
       const [listings, setListings] = useState(data);
 
+      useEffect(() => {
+        const game = localStorage.getItem('game');
+            if (game) {
+            const parsedGame = JSON.parse(game);
+            const result = data.find((item) => item.id === parsedGame.id);
+            if (!result){
+                data.push(parsedGame);
+                setListings([...data]);
+            }
+        }
+      }, []);
+
 
         console.log(data)
 

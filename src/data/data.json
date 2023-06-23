@@ -6,7 +6,7 @@
       "author" : "Galar Morgan",
       "description": "Placeholder text for description.",
       "online": true,
-      "contact method": "email",
+      "contact": "Email",
       "comments": [
         {
           "id": 1,
@@ -22,7 +22,7 @@
       "author" : "Dante from DMC",
       "description": "Placeholder text for description.",
       "online": false,
-      "contact method": "discord",
+      "contact": "Discord",
       "comments": [
         {
           "id": 1,
@@ -38,7 +38,7 @@
       "author" : "James Madlock",
       "description": "Placeholder text for description.",
       "online": true,
-      "contact method": "email",
+      "contact": "Email",
       "comments": [
         {
           "id": 1,
@@ -54,7 +54,7 @@
       "author" : "Reverend Izzy",
       "description": "Placeholder text for description.",
       "online": false,
-      "contact method": "discord",
+      "contact": "Discord",
       "comments": [
         {
           "id": 1,
@@ -70,7 +70,7 @@
       "author" : "Hiall Shore",
       "description": "Placeholder text for description.",
       "online": true,
-      "contact method": "other",
+      "contact": "Other",
       "comments": [
         {
           "id": 1,

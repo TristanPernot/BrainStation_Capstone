@@ -3,22 +3,42 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../../data/data.json';
 import './GetSingleListing.scss'
+import Thumnail from '../../assests/Images/Listingthumbnails.jpg'
 
 function ListingPage() {
   const { id } = useParams();
-  const [listing] = useState(data);
+  // const [listing, setListing] = useState(data);
   const [singleItem, setSingleItem] = useState();
 
   const getSelectedItem = (id) => {
-    const result = listing.find((item) => item.id === id);
+    console.log("id: ", id);
+    console.log("testid: ", data[data.length - 1].id);
+    const result = data.find((item) => item.id === id);
     setSingleItem(result);
   };
 
   useEffect(() => {
+    console.log("running useEffect")
+    const game = localStorage.getItem('game');
+    if (game) {
+      const parsedGame = JSON.parse(game);
+      const result = data.find((item) => item.id === parsedGame.id);
+      if (!result){
+        data.push(parsedGame);
+      }
+        
+    }
     if (id) {
       getSelectedItem(parseInt(id));
     }
+
   }, [id]);
+
+  // useEffect(() => {
+  //   if (id) {
+  //     getSelectedItem(parseInt(id));
+  //   }
+  // }, [id]);
 
   console.log('id params', id);
   console.log(data);
@@ -26,6 +46,7 @@ function ListingPage() {
 
   return (
     <div>
+        <img src={`${Thumnail}`} alt='Thumbnail' className='thumbnail' />
         <div className='description'>
             <div className='description__content'>
                 <h1>{singleItem?.title}</h1>

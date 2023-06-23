@@ -1,12 +1,18 @@
 .description{
     display: flex;
     text-align: left;
+    margin-left: 15rem;
     &__content {
         padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
     }
+}
+.thumbnail{
+    width: 60%;
+    height: 20rem;
+    justify-content: center;
 }
 .comments{
     text-align: center;
