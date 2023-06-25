@@ -41,16 +41,14 @@ function ListingPage() {
   return (
     <div>
         <img src={`${Thumnail}`} alt='Thumbnail' className='thumbnail' />
+        <h1>{singleItem?.title}</h1>
+        <p>Description: {singleItem?.description}</p>
         <div className='description'>
             <div className='description__content'>
-                <h1>{singleItem?.title}</h1>
-                <p>Description: {singleItem?.description}</p>
-            </div>
-            <div className='description__content'>
                 <p>Game Master: {singleItem?.author}</p>
-                <p>Game Type: {singleItem?.gametype}</p>
+                <p className='description__content'>Preferred Contact Method: {singleItem?.contact}</p>
             </div>
-            <p className='description__content'>Preferred Contact Method: {singleItem?.contact}</p>
+            <p>Game Type: {singleItem?.gametype}</p>
             <p className='description__content'>This game is {singleItem?.online ? 'Online' : 'Offline'}</p>
         </div>
 

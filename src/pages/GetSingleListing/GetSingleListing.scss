@@ -17,3 +17,16 @@
 .comments{
     text-align: center;
 }
+
+.form{
+    &__input{
+        display: inline;
+        border: solid #E1E1E1;
+        border-radius: 1rem;
+        font-size: 0.875rem;
+        height: 2rem;
+        vertical-align: text-bottom;
+        background-color: #FAFAFA;
+        width: 50%;
+    }
+}

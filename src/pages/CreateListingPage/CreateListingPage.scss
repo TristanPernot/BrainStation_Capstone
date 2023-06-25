@@ -1,6 +1,7 @@
 .uploadimg{
-    width: 50%;
+    width: 45%;
     height: 20rem;
+    float: left;
 }
 
 .btn{
@@ -18,10 +19,11 @@
 }
 .uploadform {
     border: 0;
-    width: 100%;
+    width: 50%;
     padding-left: 2rem;
     padding-top: 5rem;
-    margin-left: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
 
     &__fieldset {
       border: 0;
@@ -35,11 +37,16 @@
         height: 2rem;
         vertical-align: text-bottom;
         background-color: #FAFAFA;
-        width: 50%;
+        width: 100%;
     }
     &__smallinput{
         display: inline;
+        font-size: 0.875rem;
         height: 2rem;
+        vertical-align: middle;
+    }
+    &__smalllabel{
+        display: inline;
     }
     &__label{
         display: block;

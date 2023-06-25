@@ -64,8 +64,8 @@ function CreateListing() {
                 <option value="Whatsapp">Whatsapp</option>
                 <option value="Other">Other Please describe in Description</option>
               </select>
-              <input type="radio" id="online" name="online_check" value="Online" className='uploadform__smallinput'/>
-              <label for="online" className='uploadform__smallinput'>Online?</label>
+                <input type="radio" id="online" name="online_check" value="Online" className='uploadform__smallinput'/>
+                <label for="online" className='uploadform__smalllabel'>Online?</label>
               <button className='btn' type="submit">
                 Create Listing
               </button>
