@@ -1,10 +1,10 @@
-import './listingComponent.scss'
 import Thumbnail from '../../assests/Images/Listingthumbnails.jpg'
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import data from "../../data/data.json"
+import './listingComponent.scss'
 
 
 function ListComponent(){

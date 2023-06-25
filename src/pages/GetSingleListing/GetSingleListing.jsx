@@ -34,12 +34,6 @@ function ListingPage() {
 
   }, [id]);
 
-  // useEffect(() => {
-  //   if (id) {
-  //     getSelectedItem(parseInt(id));
-  //   }
-  // }, [id]);
-
   console.log('id params', id);
   console.log(data);
   console.log('single item', singleItem);
@@ -61,11 +55,24 @@ function ListingPage() {
         </div>
 
       <div className="comments">
-        <h4>Applications</h4>
+        <h2>Applications</h2>
+        <form className='form'>
+          <input
+            type='text'
+            className='form__input'
+            id='comment'
+            name='comment'
+            placeholder='Apply here'
+            required
+          />
+          <button className='btn' type='submit'>
+            Comment
+          </button>
+        </form>
         {singleItem?.comments && singleItem.comments.map((comment) => (
-          <div key={comment.id}>
-            <p>{comment.name}</p>
-            <p>Comment: {comment.comment}</p>
+          <div key={comment.id} className='commentlist__comment'>
+            <h3 className='commentlist__comment--name'>{comment.name}</h3>
+            <p>{comment.comment}</p>
           </div>
         ))}
       </div>
