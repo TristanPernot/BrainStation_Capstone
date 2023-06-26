@@ -6,16 +6,11 @@ import Thumbnail from '../../assests/Images/Listingthumbnails.jpg';
 
 function ListingPage() {
   const { id } = useParams();
-  const [singleItem, setSingleItem] = useState();
-
-  const getSelectedItem = (id) => {
-    const result = data.find((item) => item.id === id);
-    setSingleItem(result);
-  };
+  const [singleItem, setSingleItem] = useState(null);
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
     const game = localStorage.getItem('game');
-
     if (game) {
       const parsedGame = JSON.parse(game);
       const result = data.find((item) => item.id === parsedGame.id);
@@ -25,16 +20,32 @@ function ListingPage() {
     }
 
     if (id) {
-      getSelectedItem(parseInt(id));
+      const result = data.find((item) => item.id === parseInt(id));
+      setSingleItem(result);
+      setComments(result?.comments || []);
     }
   }, [id]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const comment = event.target.comment.value;
+    const newComment = {
+      id: Math.floor(Math.random() * 1000) + 11,
+      name: 'John Doe',
+      comment,
+    };
+
+    setComments((prevComments) => [...prevComments, newComment]);
+    event.target.comment.value = '';
+  };
 
   return (
     <div>
       <img src={Thumbnail} alt='Thumbnail' className='thumbnail' />
       <h1>{singleItem?.title}</h1>
+      <span className='bold'>Description:</span>
       <p className='describe'>
-        <span className='bold description__content'>Description:</span> {singleItem?.description}
+       {singleItem?.description}
       </p>
       <div className='description'>
         <div className='description__content'>
@@ -42,8 +53,7 @@ function ListingPage() {
             <span className='bold'>Game Master:</span> {singleItem?.author}
           </p>
           <p className='description__content'>
-            <span className='bold'>Preferred Contact Method:</span>{' '}
-            {singleItem?.contact}
+            <span className='bold'>Preferred Contact Method:</span> {singleItem?.contact}
           </p>
         </div>
         <p className='description__content'>
@@ -56,7 +66,7 @@ function ListingPage() {
 
       <div className='comments'>
         <h2>Applications</h2>
-        <form className='form'>
+        <form className='form' onSubmit={handleSubmit}>
           <input
             type='text'
             className='form__input'
@@ -69,13 +79,12 @@ function ListingPage() {
             Apply
           </button>
         </form>
-        {singleItem?.comments &&
-          singleItem.comments.map((comment) => (
-            <div key={comment.id} className='commentlist__comment'>
-              <h3 className='commentlist__comment--name'>{comment.name}</h3>
-              <p>{comment.comment}</p>
-            </div>
-          ))}
+        {comments.map((comment) => (
+          <div key={comment.id} className='commentlist__comment'>
+            <h3 className='commentlist__comment-name'>{comment.name}</h3>
+            <p>{comment.comment}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
