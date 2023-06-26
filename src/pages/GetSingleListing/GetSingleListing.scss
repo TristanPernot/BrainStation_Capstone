@@ -42,23 +42,24 @@
 }
 
 .commentlist{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 89%;
-    padding-left: 0;
-    margin-left: 4rem;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    &__avatar{
+        border-radius: 50%;
+        background-color: #E1E1E1;
+        display: inline-flex;
+        vertical-align: middle;
+        height: 3rem;
+        width: 3.4rem;
+    
+    }
 
     &__comment{
-        padding-left: 2.5rem;
         border-top: solid #E1E1E1;
         margin-top: 1rem;
-        padding-top: 0.5rem;
-
-        &--name{
-            display: inline-flex;
-            padding-right: 2rem;
-        }
     }
 
 }
