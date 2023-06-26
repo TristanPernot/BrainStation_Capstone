@@ -4,9 +4,9 @@
       "title": "It Moves Under The Manor",
       "gametype": "Call of Cthulhu",
       "author" : "Galar Morgan",
-      "description": "Placeholder text for description.",
+      "description": "After having been empty for many years, a prestigious old estate has been put up for sale. Despite its worth, it has had a hard time selling as there are many rumors swirling around the grounds. Because of this, there is to be an open house so potential buyers can explore the grounds, see its splendor, and set their fears to rest. There’s nothing strange here right? Each of the party is in some way connected to a very wealthy inventor and collector, who, upon hearing of this, contracted them to enter the grounds on the night of the open house and retrieve several tomes for him ...they should be in the library right? Meets Thursdays from 6pm to 9pm PST. Please send your application via carrier pigeon",
       "online": true,
-      "contact": "Email",
+      "contact": "Other",
       "comments": [
         {
           "id": 1,
@@ -20,7 +20,7 @@
       "title": "The Lost Kingdoms",
       "gametype": "Dungeons and Dragons",
       "author" : "Dante from DMC",
-      "description": "Placeholder text for description.",
+      "description": "Unearth the enigma of Aurum, a forgotten city of gold that emerges from the depths of history. Compelled by its untold riches and ancient secrets, you and your fellow adventurers embark on a perilous journey. Navigate treacherous traps, confront formidable adversaries, and form alliances amidst a city trapped in time's grasp. Unravel the mysteries of an ancient civilization, harness powerful artifacts, and choose between succumbing to greed or wielding the city's wealth for noble purposes. The destiny of Aurum and its concealed enigmas lie within your hands. Will you conquer the city or succumb to its irresistible allure? Meets Sundays 1pm to 6pm GST.",
       "online": false,
       "contact": "Discord",
       "comments": [
@@ -36,7 +36,7 @@
       "title": "Shadows of the Megacity",
       "gametype": "Shadowrun",
       "author" : "James Madlock",
-      "description": "Placeholder text for description.",
+      "description": "Immerse yourself in the neon-lit streets of Cyber Tokyo, a sprawling metropolis where shadows and technology intertwine. As a team of skilled operatives in this dystopian future, your mission is clear: to dismantle the iron grip of the mafia that holds the city captive. Armed with cybernetic enhancements, hacking prowess, and deadly combat skills, you'll navigate a dangerous web of intrigue, corruption, and high-tech crime. Unravel the secrets of the underworld, forge unlikely alliances, and outsmart both criminal syndicates and corporate overlords as you delve deeper into the heart of Cyber Tokyo's criminal empire. The fate of the city hangs in the balance, and only you can bring justice to the shadows. Meets at 9:30am on Tuesdays AEST",
       "online": true,
       "contact": "Email",
       "comments": [
@@ -52,7 +52,7 @@
       "title": "Heroes Unleashed",
       "gametype": "Mutants and Masterminds",
       "author" : "Reverend Izzy",
-      "description": "Placeholder text for description.",
+      "description": "Step into a world where superhumans and villains clash, as a team of extraordinary individuals tasked with a harrowing mission: to track down and bring justice to a notorious murderer known as The Smiling Spectre. This enigmatic killer leaves a trail of puzzling clues and eerie smiles in their wake, their true motives shrouded in darkness. As you uncover the chilling truth behind The Smiling Spectre's identity and their macabre agenda, you'll face formidable challenges, navigate treacherous alliances, and harness your own unique superhuman abilities. Only by outwitting this cunning antagonist and unmasking their twisted motivations can you bring an end to the reign of terror, and restore peace to a city gripped by fear. Meets Saturdays 4pm to 10pm EST",
       "online": false,
       "contact": "Discord",
       "comments": [
@@ -77,6 +77,18 @@
           "name": "Michael Thompson",
           "comment": "Placeholder comment."
         }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Against the Stone Giants",
+      "gametype": "Dungeons and Dragons",
+      "author": "Tristan Pernot",
+      "description": "Skoraeus Stonebones has had a vision! Annam is comming back when all life on the material plane is destroyed. Embark on a Journey to stop the stone giants from ravaging the lands and defend the kingdoms from certain doom and explore caverns and tombs filled with traps and treasures. Meets Saturdays 1pm to 5pm PST",
+      "online": false,
+      "contact": "Discord",
+      "comments":[
+        
       ]
     }
 ]

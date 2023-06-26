@@ -3,7 +3,7 @@ import './HomePage.scss';
 import ListComponent from "../../componets/ListingComponent/listingComponent";
 function HomePage() {
     return (
-        <>
+        <div className="background">
         <div className="homepage">
             <h1 className="homepage__title">
                 Begin Your Journey into the world of TableTop Role Playing Games
@@ -14,7 +14,7 @@ function HomePage() {
                 </button>
             </Link>
         </div>
-        </>
+        </div>
     );
 }
 

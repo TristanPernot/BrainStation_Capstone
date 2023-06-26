@@ -14,19 +14,56 @@
     height: 20rem;
     justify-content: center;
 }
-.comments{
-    text-align: center;
-}
-
 .form{
+    display: flex;
+    align-items: center;
     &__input{
-        display: inline;
         border: solid #E1E1E1;
         border-radius: 1rem;
         font-size: 0.875rem;
         height: 2rem;
         vertical-align: text-bottom;
         background-color: #FAFAFA;
+        margin-left: 25rem;
         width: 50%;
+        flex: 1;
+        margin-right: 1rem;
     }
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.describe{
+    margin: auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.commentlist{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 89%;
+    padding-left: 0;
+    margin-left: 4rem;
+
+    &__comment{
+        padding-left: 2.5rem;
+        border-top: solid #E1E1E1;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+
+        &--name{
+            display: inline-flex;
+            padding-right: 2rem;
+        }
+    }
+
+}
+
+.btn{
+    flex-shrink: 0;
+    margin-right: 15rem;
 }

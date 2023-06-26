@@ -1,12 +1,15 @@
-.uploadimg{
+.wholecontainer{
+  padding-top: 1rem;
+}
+.uploadimg {
     width: 45%;
     height: 20rem;
     float: left;
-}
-
-.btn{
+  }
+  
+  .btn {
     background-color: #f37a48;
-    color: #FFFF;
+    color: #fff;
     border-radius: 0.25rem;
     border: none;
     text-align: center;
@@ -15,40 +18,69 @@
     margin-top: 1rem;
     text-decoration: none;
     display: block;
-    text-decoration: none;
-}
+  }
+  
 .uploadform {
-    border: 0;
+  &__input {
+    display: flex;
+    border: solid #e1e1e1;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    background-color: #fafafa;
     width: 50%;
-    padding-left: 2rem;
-    padding-top: 5rem;
-    margin-left: auto;
-    margin-right: 2rem;
+  }
+  
+  &__smallinput {
+    display: inline;
+    border: solid #e1e1e1;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    background-color: #fafafa;
+  }
+  
+  &__smalllabel {
+    display: inline-block;
+    vertical-align: super;
+  }
+  
+    &__label {
+      display: block;
+    }
 
-    &__fieldset {
-      border: 0;
-
+    &__btn-container {
+      display: flex;
+      justify-content: space-around;
     }
-    &__input{
-        display: inline;
-        border: solid #E1E1E1;
-        border-radius: 1rem;
-        font-size: 0.875rem;
-        height: 2rem;
-        vertical-align: text-bottom;
-        background-color: #FAFAFA;
-        width: 100%;
-    }
-    &__smallinput{
-        display: inline;
-        font-size: 0.875rem;
-        height: 2rem;
-        vertical-align: middle;
-    }
-    &__smalllabel{
-        display: inline;
-    }
-    &__label{
-        display: block;
-    }
-}
+  }
+  
+  .cancelbtn {
+    background-color: red;
+    color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .butn {
+    background-color: #F37A48;
+    color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+    margin-left: 20rem;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+  

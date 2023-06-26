@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: start;
   border-bottom: 5px solid #f37a48;
-  
+
   &__logo {
     background-image: url(../../assests/Logo/Logo.png);
     width: 12rem;
@@ -15,12 +15,12 @@
     background-repeat: no-repeat;
     background-size: 5rem;
   }
-  
+
   &__nav {
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    
+
     &--item {
       color: black;
       width: 44vw;
@@ -35,22 +35,21 @@
       padding-top: 0.45rem;
       margin-right: 1rem;
     }
-    
+
     &--item:hover {
       border-bottom: 5px solid #f37a48;
     }
-    
-    &--button {
-      background-color: #f37a48;
-      color: #ffff;
-      border-radius: 0.25rem;
-      border: none;
-      height: 1.5rem;
-      width: 4rem;
-      margin-top: 1rem;
-      text-decoration: none;
-      text-align: center;
-      margin-right: 5rem;
+
+    &--avatar {
+      background-image: url(../../assests//Images/waifu2.png);
+      background-size: cover;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: #e1e1e1;
+      align-self: center;
+      margin-left: auto;
+      margin-right: 1rem;
     }
   }
 }
