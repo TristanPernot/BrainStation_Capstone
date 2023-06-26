@@ -31,7 +31,7 @@ function ListingPage() {
     const comment = event.target.comment.value;
     const newComment = {
       id: Math.floor(Math.random() * 1000) + 11,
-      name: 'John Doe',
+      name: 'Tristan Pernot',
       comment,
     };
 
