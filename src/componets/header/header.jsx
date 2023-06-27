@@ -10,11 +10,11 @@ function Header() {
 
         <div className="header__nav">
           <NavLink to="/listings" className="header__nav--item">
-            <div>Looking for a Group</div>
+            <div>Looking for a Group?</div>
           </NavLink>
 
           <NavLink to="/createlisting" className="header__nav--item">
-            <div>Would you like to be a GM?</div>
+            <div>Want to GM?</div>
           </NavLink>
           <div className="header__nav--avatar"></div>
         </div>

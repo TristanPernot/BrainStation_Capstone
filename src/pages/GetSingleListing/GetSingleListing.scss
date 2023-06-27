@@ -39,6 +39,7 @@
     margin: auto;
     margin-left: 10rem;
     margin-right: 10rem;
+    text-align: left;
 }
 
 .commentlist{
@@ -60,6 +61,10 @@
     &__comment{
         border-top: solid #E1E1E1;
         margin-top: 1rem;
+        text-align: left;
+        margin-left: 25rem;
+        padding-left: 2rem;
+        margin-right: 15rem;
     }
 
 }

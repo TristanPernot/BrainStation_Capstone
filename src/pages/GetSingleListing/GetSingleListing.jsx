@@ -57,7 +57,7 @@ function ListingPage() {
           </p>
         </div>
         <p className='description__content'>
-          <span className='bold'>Game Type:</span> {singleItem?.gametype}
+          <span className='bold'>System:</span> {singleItem?.gametype}
         </p>
         <p className='description__content'>
           This game is {singleItem?.online ? 'Online' : 'Offline'}

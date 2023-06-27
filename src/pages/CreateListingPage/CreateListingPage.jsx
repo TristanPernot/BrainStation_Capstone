@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './CreateListingPage.scss';
 import Thumbnail from '../../assests/Images/unsplashdnd.jpg';
 
 function CreateListing() {
+
+  const navigate = useNavigate();
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -13,10 +16,13 @@ function CreateListing() {
       description: event.target.description.value,
       author: "Tristan Pernot",
       gametype: event.target.gametype.value,
-      contact: event.target.contact.value
+      contact: event.target.contact.value,
+      online: event.target.online.checked ? "online" : "offline",
+      
     };
 
     localStorage.setItem("game", JSON.stringify(game));
+    navigate("/listings")
   };
 
   return (
@@ -26,6 +32,7 @@ function CreateListing() {
           <img src={Thumbnail} alt='Upload-img-preview.jpg' className='uploadimg' />
         </div>
         <div className="column">
+          <div className='sepform'>
           <div className='uploadform'>
             <form className='uploadform' onSubmit={handleSubmit}>
               <label htmlFor='title' className='uploadform__label'>
@@ -80,6 +87,7 @@ function CreateListing() {
               </div>
               
             </form>
+          </div>
           </div>
         </div>
       </div>

@@ -37,9 +37,7 @@ function ListComponent() {
                 <p className="container__text">
                   {listing.gametype}
                 </p>
-                <p className="container__text--important">
-                  {listing.online ? '*Online' : ' '}
-                </p>
+                {listing.online === 'online' && <p className="container__text--important">*Online</p>}
               </div>
             </div>
           </Link>
