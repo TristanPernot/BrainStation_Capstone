@@ -19,6 +19,7 @@ function ListingPage() {
       }
     }
 
+
     if (id) {
       const result = data.find((item) => item.id === parseInt(id));
       setSingleItem(result);
@@ -34,7 +35,7 @@ function ListingPage() {
       name: 'Tristan Pernot',
       comment,
     };
-
+    localStorage.setItem("comments", JSON.stringify([...comments, newComment]));
     setComments((prevComments) => [...prevComments, newComment]);
     event.target.comment.value = '';
   };
